@@ -10,6 +10,8 @@ class SimpleDigitalClock(ClockBase, SelfScalingLabel):
         self._format = fmt
         ClockBase.__init__(self)
         SelfScalingLabel.__init__(self, **kwargs)
+        self.bind(texture_size=self.setter('size'))
+        self.start()
 
     def update(self):
         self.text = arrow.now().format(self._format)

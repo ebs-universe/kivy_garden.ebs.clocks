@@ -7,9 +7,8 @@ from kivy_garden.ebs.clocks import SimpleDigitalClock
 
 class ClockExampleApp(App):
     def build(self):
-        w = BoxLayout(size=(500, 200))
-        clock = SimpleDigitalClock()
-        clock.start()
+        w = BoxLayout(size_hint=(1, 1))
+        clock = SimpleDigitalClock(bold=True, font_size='120sp')
         w.add_widget(clock)
         return w
 
