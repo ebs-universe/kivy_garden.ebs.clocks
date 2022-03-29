@@ -3,19 +3,28 @@ Clock Widgets for Kivy
 
 [![Github Build Status](https://github.com/ebs-universe/kivy_garden.ebs.clocks/workflows/Garden%20flower/badge.svg)](https://github.com/ebs-universe/kivy_garden.ebs.clocks/actions)
 
-This provides relatively simple Clock widgets for Kivy. 
+This package provides relatively simple Clock widgets for Kivy. 
 
-These widgets are easily implemented from scratch in both Python and Kv, and 
-for most non-EBS applications, you'd probably just want to use some .kv based 
-clock widget available in the wild. 
+Presently it has only a single and trivial clock and is certainly not deserving 
+of a whole package. In time, this package is intended to hold a curated 
+collection of clocks in both Python and .kv.  
+
+The presently included widgets are easily implemented from scratch in both 
+Python and Kv, and for most non-EBS applications, you'd probably just want 
+to roll your own or use some .kv based clock widget available in the wild.
+The typical EBS application can get unwieldy pretty quickly though, so this
+package affords a separation of concerns which aids in maintainability.
 
 If you are looking for something you can just pip install and which just works, 
-and don't care that it's written in python and might pull in additional 
-dependencies, then this might be for you.
+and don't care that it might be written in python and might pull in additional 
+dependencies, then this might be an option.
 
 Included clock widgets : 
   
   - SimpleDigitalClock
+
+No clock which have its own kivy_garden package will be added to this collection,
+and the collection itself will grow (very) slowly.
 
 This package is part of the EBS widget collection for Kivy. It is written in 
 mostly Python and depends on the EBS core widgets and widget infrastructure package. 

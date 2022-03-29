@@ -4,6 +4,10 @@ from kivy.app import App
 from kivy.uix.boxlayout import BoxLayout
 from kivy_garden.ebs.clocks import SimpleDigitalClock
 
+# Scaling does not work with this approach. There is possibly something else in
+# the original full linuxnode which makes SelfScalingLabel work. It might have
+# to do with bindings to Window.size
+
 
 class ClockExampleApp(App):
     def build(self):
